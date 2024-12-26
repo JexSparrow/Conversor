@@ -2,30 +2,37 @@ const botaoConverter = document.querySelector(".botao-converter")   // botao par
 const selectAConverterDe = document.querySelector(".select-A-Converter-De")     // primeiro select
 const selectAConverterPara = document.querySelector(".select-A-Converter-Para")  // segundo select
 
+// CNY,GBP,
 
-function converterValor() {
+
+async function converterValor() {
+
+    const data = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-BRL,CNY-BRL,EUR-USD,BTC-USD,GBP-USD,CNY-USD,BRL-USD,USD-EUR,BTC-EUR,CNY-EUR,BRL-EUR,GBP-EUR,USD-GBP,BRL-GBP,EUR-GBP,BRL-CNY,USD-CNY,EUR-CNY").then(response => response.json())
+
+    console.log(data)
 
     const valorInput = document.querySelector(".input").value        // valor do input
     const valorAConverter = document.querySelector("#valor-moeda-1") // valor para converter - cima
     const valorConvertido = document.querySelector("#valor-moeda-2") // valor convertido - baixo
 
-    let dolarHoje = 5.26
-    let euroHoje = 5.72
-    let libraHoje = 6.72
-    let bitcoinHoje = 373000.00             // cotação moedas
-    let yuanHoje = 0.78
+    let dolarHoje = data.USDBRL.high
+    let euroHoje = data.EURBRL.high
+    let libraHoje = data.GBPBRL.high
+    let bitcoinHoje = data.BTCBRL.high            // cotação moedas
+    let yuanHoje = data.CNYBRL.high
     let realHoje = 1.00
 
     // SELECT CONVERTER DE // CIMA
 
     if (selectAConverterDe.value == "dolarTop") {
 
+
+        euroHoje = data.EURUSD.high
+        libraHoje = data.GBPUSD.high
+        bitcoinHoje = data.BTCUSD.high
+        yuanHoje = data.CNYUSD.high
+        realHoje = data.BRLUSD.high
         dolarHoje = 1.00
-        euroHoje = 1.09
-        libraHoje = 1.28
-        bitcoinHoje = 71000.00
-        yuanHoje = 0.14
-        realHoje = 0.19
 
         valorAConverter.innerHTML = Intl.NumberFormat("en-US", {
             style: "currency",
@@ -37,12 +44,12 @@ function converterValor() {
 
     if (selectAConverterDe.value == "euroTop") {
 
-        dolarHoje = 0.92
+        dolarHoje = data.USDEUR.high
+        libraHoje = data.GBPEUR.high
+        bitcoinHoje = data.BTCEUR.high
+        yuanHoje = data.CNYEUR.high
+        realHoje = data.BRLEUR.high
         euroHoje = 1.00
-        libraHoje = 1.17
-        bitcoinHoje = 65000.00
-        yuanHoje = 0.13
-        realHoje = 0.17
 
         valorAConverter.innerHTML = Intl.NumberFormat("de-DE", {
             style: "currency",
@@ -54,12 +61,12 @@ function converterValor() {
 
     if (selectAConverterDe.value == "libraTop") {
 
-        dolarHoje = 0.78
-        euroHoje = 0.92
+        dolarHoje = data.USDGBP.high
+        euroHoje = data.EURGBP.high
+        bitcoinHoje = 55000.00 // API nao possui as outras infos (cny e btc)
+        yuanHoje = 0.11 // // API nao possui as outras infos (cny e btc)
+        realHoje = data.BRLGBP.high
         libraHoje = 1.00
-        bitcoinHoje = 55000.00
-        yuanHoje = 0.11
-        realHoje = 0.15
 
         valorAConverter.innerHTML = Intl.NumberFormat("en-GB", {
             style: "currency",
@@ -71,7 +78,7 @@ function converterValor() {
 
     if (selectAConverterDe.value == "bitcoinTop") {
 
-        dolarHoje = 0.000014101876675603
+        dolarHoje = 0.000014101876675603 // API NAO POSSUI AS INFOS DE BTC-(MOEDA)
         euroHoje = 0.000015335120649491
         libraHoje = 0.000018016085790884
         bitcoinHoje = 1.0
@@ -89,12 +96,12 @@ function converterValor() {
 
     if (selectAConverterDe.value == "yuanTop") {
 
-        dolarHoje = 7.24
-        euroHoje = 7.88
+        dolarHoje = data.USDCNY.high // 7.24
+        euroHoje = data.EURCNY.high // 7.88
         libraHoje = 9.26
         bitcoinHoje = 510000.00
         yuanHoje = 1.00
-        realHoje = 1.27
+        realHoje = data.BRLCNY.high // 1.27
 
         valorAConverter.innerHTML = Intl.NumberFormat("cn-CN", {
             style: "currency",
