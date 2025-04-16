@@ -13,64 +13,78 @@
 
     <title>Conversor - Moedas</title>
 </head>
-<main>
-    <img class="pig" src="./assets/pig.gif" alt="porquinho-logo">
-
-    <label> Converter <b>de</b>
-        <select class="select-A-Converter-De">
-            <option class="option-1" value="realTop">R$ Real</option>
-            <option class="option-1" value="dolarTop">U$$ Dólar</option>
-            <option class="option-1" value="euroTop">€ Euro</option>
-            <option class="option-1" value="libraTop">£ Libra</option>
-            <option class="option-1" value="bitcoinTop">₿ Bitcoin</option>
-            <option class="option-1" value="yuanTop">¥ Yuan</option>
-        </select>
-    </label>
-
-    <label> Converter <b>para</b>
-        <select class="select-A-Converter-Para">
-            <option class="option-2" value="dolar">U$$ Dólar</option>
-            <option class="option-2" value="euro">€ Euro</option>
-            <option class="option-2" value="libra">£ Libra</option>
-            <option class="option-2" value="bitcoin">₿ Bitcoin</option>
-            <option class="option-2" value="yuan">¥ Yuan</option>
-            <option class="option-2" value="real">R$ Real</option>
-        </select>
-    </label>
-
-    <label id="label-input"> <b>Valor</b>
-        <input class="input" placeholder="R$ 0,00">
-    </label>
-
-    <button class="botao-converter">Converter</button>
-
-    <section>
-        <div class="moedas-resultado">
-
-            <img id="real" src="./assets/real.png" alt="real-logo">
-
-            <p class="moeda" id="nome-moeda-1">Real</p>
-            <p class="moeda-valor" id="valor-moeda-1">R$ 0,00</p>
-
-        </div>
-
-
-        <img id="seta" src="./assets/seta.png" alt="seta-baixo">
-
-
-        <div class="moedas-resultado">
-
-            <img id="dolar" src="./assets/dolar.png" alt="dolar-logo">
-
-            <p class="moeda" id="nome-moeda-2">Dólar Americano</p>
-            <p class="moeda-valor" id="valor-moeda-2">U$$ 0,00</p>
-
-        </div>
-    </section>
-
-</main>
 
 <body>
+
+    <main>
+        <img class="pig" src="./assets/pig.gif" alt="porquinho-logo">
+
+        <div class="convert-box">
+
+            <label> Converter <b>de</b>
+                <select class="select-A-Converter-De">
+                    <option class="option-1" value="realTop">R$ Real</option>
+                    <option class="option-1" value="dolarTop">U$$ Dólar</option>
+                    <option class="option-1" value="euroTop">€ Euro</option>
+                    <option class="option-1" value="libraTop">£ Libra</option>
+                    <option class="option-1" value="bitcoinTop">₿ Bitcoin</option>
+                    <option class="option-1" value="yuanTop">¥ Yuan</option>
+                </select>
+            </label>
+
+            <label> Converter <b>para</b>
+                <select class="select-A-Converter-Para">
+                    <option class="option-2" value="dolar">U$$ Dólar</option>
+                    <option class="option-2" value="euro">€ Euro</option>
+                    <option class="option-2" value="libra">£ Libra</option>
+                    <option class="option-2" value="bitcoin">₿ Bitcoin</option>
+                    <option class="option-2" value="yuan">¥ Yuan</option>
+                    <option class="option-2" value="real">R$ Real</option>
+                </select>
+            </label>
+
+            <label id="label-input"> <b>Valor</b>
+                <input class="input" placeholder="R$ 0,00">
+            </label>
+
+        </div>
+
+
+
+
+
+        <button class="botao-converter">Converter</button>
+
+
+        <div class="section-box">
+            <section>
+                <div class="moedas-resultado">
+
+                    <img id="real" src="./assets/real.png" alt="real-logo">
+
+                    <p class="moeda" id="nome-moeda-1">Real</p>
+                    <p class="moeda-valor" id="valor-moeda-1">R$ 0,00</p>
+
+                </div>
+
+
+                <img id="seta" src="./assets/seta.png" alt="seta-baixo">
+
+
+                <div class="moedas-resultado">
+
+                    <img id="dolar" src="./assets/dolar.png" alt="dolar-logo">
+
+                    <p class="moeda" id="nome-moeda-2">Dólar Americano</p>
+                    <p class="moeda-valor" id="valor-moeda-2">U$$ 0,00</p>
+
+                </div>
+            </section>
+
+        </div>
+
+
+    </main>
 
 </body>
 <script src="./scripts.js"></script>
