@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    background: #f4f4f4;
+    background-image: linear-gradient(to top, #e7ecf1, #dae1f0, #d5d5ed, #d6c6e6, #dbb7d9);
     min-width: 50vw;
     min-height: 95vh;
     border-radius: 20px;
