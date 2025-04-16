@@ -106,11 +106,13 @@ input {
     caret-color: #79096b;
     margin-top: 10px;
     padding-left: 18px;
+    transition: 300ms all ease-in-out;
 }
 
 input:hover {
     caret-color: #f80116;
     cursor: pointer;
+    box-shadow: 1px 1px 15px #79096b;
 }
 
 button {
@@ -128,16 +130,17 @@ button {
     display: block;
     margin: 15px auto;
     cursor: pointer;
+    transition: 300ms all ease-in-out;
 }
 
 button:hover {
     opacity: 0.92;
     box-shadow: 4px 4px 8px #ec0000ec;
+    scale: 1.05;
 }
 
 button:active {
-    width: 42%;
-    font-size: 24px;
+    scale: 1.2;
     box-shadow: 5px 5px 10px #79096b;
 }
 
