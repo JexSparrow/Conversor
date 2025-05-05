@@ -23,7 +23,17 @@ Atualização Dinâmica: As informações sobre as moedas selecionadas (nome com
 
 <b>Este projeto demonstra minha capacidade de integrar APIs externas para obter dados em tempo real e manipulá-los com JavaScript para criar ferramentas web práticas e informativas.</b>
 
-Site está responsivo para Dispositivos Móveis!
+Site está totalmente responsivo para Dispositivos Móveis!
 
 Confira: (https://money-jex.netlify.app/)
+
+<h2>Layout para Desktop</h2>
+
+![Captura de tela 2025-05-05 133416](https://github.com/user-attachments/assets/c58afed8-5530-4e3b-a795-c2ffdb5a6ec3)
+![Captura de tela 2025-05-05 133442](https://github.com/user-attachments/assets/0c83d0bc-ba65-4eb5-ab62-05350c3964ad)
+
+<h2>Layout para Mobile</h2>
+
+![Captura de tela 2025-05-05 133544](https://github.com/user-attachments/assets/0f707482-5c73-4411-8597-720d06fec678)
+![Captura de tela 2025-05-05 133647](https://github.com/user-attachments/assets/0b42b674-da52-4c24-b144-6db7068c078e)
 
