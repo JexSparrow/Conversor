@@ -11,13 +11,17 @@ A interface intuitiva permite selecionar as moedas de conversão e visualizar o 
 <h2>Um breve resumo das funcionalidades que fazem a diferença:</h2>
 
 ✅ Cotações em Tempo Real: Conectado a uma API financeira confiável, o conversor busca as taxas de câmbio mais recentes, garantindo precisão nas conversões.
+
 ✅ Suporte a Múltiplas Moedas: Converta entre Dólar, Euro, Libra, Bitcoin, Yuan e Real, oferecendo uma visão global do valor do seu dinheiro.
+
 ✅ Seletores Intuitivos: Escolha facilmente as moedas de conversão através de menus dropdown claros e objetivos.
+
 ✅ Visualização Instantânea: O valor convertido é atualizado automaticamente ao inserir o montante e selecionar as moedas desejadas.
+
 
 Atualização Dinâmica: As informações sobre as moedas selecionadas (nome completo, símbolo e valor inicial) são atualizadas sempre que o usuário altera as opções de conversão.
 
-<b>Este projeto demonstra minha capacidade de integrar APIs externas para obter dados em tempo real e manipulá-los com JavaScript para criar ferramentas web práticas e informativas. A combinação de uma interface de usuário clara com a busca dinâmica de dados resulta em uma experiência valiosa para quem precisa acompanhar o mercado de câmbio.</b>
+<b>Este projeto demonstra minha capacidade de integrar APIs externas para obter dados em tempo real e manipulá-los com JavaScript para criar ferramentas web práticas e informativas.</b>
 
 Site está responsivo para Dispositivos Móveis!
 
